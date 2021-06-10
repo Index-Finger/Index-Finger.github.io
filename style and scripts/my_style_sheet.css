@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(70, 52, 77); border:lavender; border-width: 1em;
+}
+
+li {
+    list-style-type: none; color:rbg(70,52,77); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; padding-bottom: 20px;
+}
+
+#backstop {
+    background-color: lavender; height: 20in; padding: 5px; top:1px;
+    width:90%; margin:auto; text-align: center; z-index: -1;
+}
+
+.icon {
+    height: 30px; width: 30px;
+}
