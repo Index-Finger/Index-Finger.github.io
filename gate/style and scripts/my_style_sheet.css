@@ -11,6 +11,10 @@ li {
     font-family: Verdana, Geneva, Tahoma, sans-serif; padding-bottom: 20px;
 }
 
+#hello {
+    width:50%; margin:auto; font-size: large;
+}
+
 #backstop {
     background-color: lavender; height: 20in; padding: 5px; top:1px;
     width:90%; margin:auto; text-align: center; z-index: -1;
@@ -43,4 +47,8 @@ h2 {
 
 #audioambiance {
     position:absolute; top:1em; right:1em;
+}
+
+#breaker {
+    height: 20px;
 }
