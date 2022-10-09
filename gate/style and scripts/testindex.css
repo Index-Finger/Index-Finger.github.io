@@ -2,9 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: rgb(70, 52, 77); border:lavender; border-width: 1em;
-}
 
 li {
     list-style-type: none; color:rbg(70,52,77); 
@@ -16,7 +13,7 @@ li {
 }
 
 #backstop {
-    background-color: lavender; height: 20in; padding: 5px; top:1px;
+    background-color: rgb(255, 255, 255); height: 20in; padding: 5px; top:1px;
     width:90%; margin:auto; text-align: center; z-index: -1;
 }
 
@@ -26,19 +23,6 @@ li {
 
 .tile {
     height: 100px; width:100px;
-}
-
-#ambiance {
-    /* The image used */
-    background-image: url("../images/castle.gif");
-      
-    /* Full height */
-    height: 100%;
-      
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #testindex {
@@ -55,13 +39,14 @@ li {
 }
 
 h2 {
-    height:10in;
-}
-
-#audioambiance {
-    position:absolute; top:1em; right:1em;
+    height:20in;
 }
 
 #breaker {
     height: 20px;
+}
+
+#white {
+    color:rgb(22, 33, 42);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
