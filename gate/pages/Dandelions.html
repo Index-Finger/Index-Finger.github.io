@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="../style and scripts/my_style_sheet.css">
+    <link rel="stylesheet" href="">
+
+    <style>
+        body {
+    /* The image used */
+    background-image: url("../images/ferns._specimen_of_cyanotype_2007.15.1.jpg");
+      
+    /* Full height */
+    height: 100%;
+      
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+
+        /* Set additional styling options for the columns */
+        .column {
+        float: left;
+        }
+    
+        /* Set width length for the left, right and middle columns */
+        .farleft {
+           width: 3%;
+        }
+
+        .left {
+        width: 35%;
+        }
+    
+        .middle {
+        width: 30%;
+        background-color: rgba(230, 208, 176, 0.507);
+        text-align: center;
+        height: 100vh;
+        }
+        
+        .right {
+        width: 10%;
+        }
+    
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        </style>
+
 </head>
+
+
 <body>
-<div id="backstop">
-   
-    <p></p>
-    <p id="breaker"> </p>
+    <div class="row">
+        <div class="column farleft">
+            <p></p>
+        </div>
+    <div class="row">
+        <div class="column left">
+            <p></p>
+        </div>
+    
+    <div class="column middle">
+    </br>
+    </br>
     <p> Dandelions written and performed by Clayton Valli
         <br>https://www.youtube.com/watch?v=hZ1LTInEQbk
         <br>My Target Translation
+        <br>
+        <br>
         <br>Yellow flowers,
         <br>Arrayed in grasses,
         <br>Sway in winds.
@@ -42,7 +101,14 @@
         <br>Flowers pop
         <br>And spread.
         </p>
- 
+        </div>
+    
+        <div class="column right">
+            <p></p>
+        </div>
+    
+    </div>
+    
    
 </div>
 </body>
