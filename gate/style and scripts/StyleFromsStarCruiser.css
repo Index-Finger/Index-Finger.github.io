@@ -1,0 +1,195 @@
+/* defaults */
+body
+{
+	margin: 0;
+	border: 0;
+	padding: 0 10% 0 10%;
+	width: 30em;
+	color: #000;
+	background: #fffff0;
+	line-height: 1.25em;
+	font-family: hoefler text, georgia;
+}
+
+p
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	text-indent: 1.75em;
+	text-align: justify;
+}
+
+/* navigation */
+.nav
+{
+	text-align: center;
+	font-size: smaller;
+	font-family: lucida grande, verdana;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: solid black 1px;
+}
+
+:link
+{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+:visited
+{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+:link:hover, :visited:hover
+	{
+	/*text-decoration: underline overline;*/
+	color: red; background: transparent;
+	}
+
+/* preamble */
+h1, h2, .slogan, .byline
+{
+	font-family: lucida grande, verdana;
+	text-align: center;
+	text-indent: 0;
+}
+h1
+{
+	margin: 1em 0 0 0;
+	border: 0;
+	padding: 0;
+	font-size: 150%;
+	text-transform: uppercase;
+}
+
+.slogan
+{
+	font-style: italic;
+}
+
+h2
+{
+	font-size: 120%;
+}
+
+/* main text - structure */
+.story p:first-child, /* style I: unindent first paragraph in scene */
+.story2 div div:first-child p:first-child /* style II: unindent first paragraph in major scene */
+{
+	text-indent: 0;
+}
+.story p:first-child:first-line, /* style I: small-caps first line in scene */
+.story2 div div:first-child p:first-child:first-line /* style II: small-caps first line in scene */
+{
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+.story div:first-child div:first-child p:first-child:first-letter,
+.story2 div:first-child div:first-child p:first-child:first-letter /* drop caps */
+{
+	font-size: 3em;
+	float: left;
+	line-height: 1em;
+}
+
+.story div div, .story2 div div /* blank line between scenes */
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.story > div + div:before, .story2 > div + div:before /* asterisks between major scenes */
+{
+	content: "*     *     *";
+	white-space: pre;
+	text-align: center;
+	display: block;
+}
+
+blockquote p:first-child
+{
+	text-indent: 0;
+}
+
+/* main text - inlines */
+.lead-in { font-variant: small-caps; }
+
+.label, .alt-quote-2
+{
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+strong {
+	font-weight: normal;
+	/* don't use until Safari supports small-caps
+	font-variant: small-caps;
+	text-transform: lowercase;*/
+	text-transform: uppercase;
+}
+
+acronym
+{
+	font-style: inherit;
+	font-size: smaller;
+	/* don't use until Safari supports small-caps
+	font-variant: small-caps;
+	text-transform: lowercase;*/
+}
+abbr { font-style: normal }
+
+.alt-quote em, .alt-quote .ship-name, .alt-quote cite { font-style: normal; }
+
+/* teasers */
+div.teasers
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.teasers p
+{
+	padding-left: 1.75em;
+	text-indent: -1.75em;
+	font-weight: bold;
+	/*text-transform: uppercase;*/
+}
+
+div.teasers p.response
+{
+	text-indent: 0;
+	text-transform: none;
+}
+
+.tagline { text-indent: 0; }
+
+.endline
+{
+	text-indent: 0;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-size: smaller;
+}
+
+/* explanatory segments */
+div.explanation
+	{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: smaller;
+	}
+
+div.explanation p
+	{
+	text-indent: 0;
+	margin-bottom: 1em;
+	}
+
+@media print {
+	body { background: white; }
+	.nav, .extra { display: none; }
+}
